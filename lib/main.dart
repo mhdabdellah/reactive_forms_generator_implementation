@@ -1,8 +1,23 @@
 import 'package:flutter/material.dart';
 import 'package:reactive_form/reactive_form_exemple.dart';
 import 'package:reactive_form/reactive_form_generator_exemple.dart';
+import 'package:reactive_form/user.dart';
 
 void main() {
+  Map<String, dynamic> userData = {
+    'nickname': 'mhdabdellahi',
+    'email': 'mhdabdellahi0@gmail.com',
+    'comment': 'This is a comment',
+    'gender': 'Male',
+    'birthDate': '1999-10-15T00:00:00.000',
+    'termsAccepted': true,
+  };
+
+  // Create User object from map
+  User user = User.fromMap(userData);
+
+  // Use the user object as needed
+  print("userData : ${user.toMap()}"); // Outputs: JohnDoe
   runApp(const MyApp());
 }
 

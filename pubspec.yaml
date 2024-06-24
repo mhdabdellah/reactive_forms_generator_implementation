@@ -37,6 +37,8 @@ dependencies:
   cupertino_icons: ^1.0.2
   reactive_forms: ^17.0.1
   reactive_forms_annotations:
+  # freezed: ^2.5.0
+  json_annotation: ^4.9.0
 
 dev_dependencies:
   flutter_test:
@@ -50,7 +52,8 @@ dev_dependencies:
   flutter_lints: ^2.0.0
   build_runner:
   reactive_forms_generator:
-  freezed:
+  json_serializable: ^6.8.0
+  # freezed: ^2.5.3
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

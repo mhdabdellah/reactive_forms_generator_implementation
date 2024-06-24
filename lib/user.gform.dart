@@ -692,14 +692,14 @@ class UserForm implements FormModel<User> {
   static FormGroup formElements(User? user) => FormGroup({
         nicknameControlName: FormControl<String>(
             value: user?.nickname,
-            validators: [RequiredValidator()],
+            validators: [],
             asyncValidators: [],
             asyncValidatorsDebounceTime: 250,
             disabled: false,
             touched: false),
         emailControlName: FormControl<String>(
             value: user?.email,
-            validators: [RequiredValidator(), EmailValidator()],
+            validators: [],
             asyncValidators: [],
             asyncValidatorsDebounceTime: 250,
             disabled: false,
@@ -713,21 +713,21 @@ class UserForm implements FormModel<User> {
             touched: false),
         genderControlName: FormControl<String>(
             value: user?.gender,
-            validators: [RequiredValidator()],
+            validators: [],
             asyncValidators: [],
             asyncValidatorsDebounceTime: 250,
             disabled: false,
             touched: false),
         birthDateControlName: FormControl<DateTime>(
             value: user?.birthDate,
-            validators: [RequiredValidator()],
+            validators: [],
             asyncValidators: [],
             asyncValidatorsDebounceTime: 250,
             disabled: false,
             touched: false),
         termsAcceptedControlName: FormControl<bool>(
             value: user?.termsAccepted,
-            validators: [RequiredValidator()],
+            validators: [],
             asyncValidators: [],
             asyncValidatorsDebounceTime: 250,
             disabled: false,
